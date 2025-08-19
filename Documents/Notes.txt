@@ -1,0 +1,29 @@
+**ANOTAÇÕES DE JAVA LEGAL HAHA**
+
+                                    SINTAXE 
+
+A sintaxe da linguagem java possui uma sensibilidade à letras maiúsculas tornando-a uma linguagem "case-sensitive".
+Ela considera se a variável tem letras em lower-case ou em upper-case. Cada instrução da linguagem java termina em " ; ", e 
+seus blocos de código ficam entre " {} ", O programa sempre começa no método "Main.java" ou "App.java".
+
+                                    TIPOS PRIMITIVOS
+O java tem oito tipos primitivos com tamanho fixo, são eles:
+byte: têm tamanho de 8 bits, Ex: byte b = 128;
+short: têm tamanho de 16 bits, Ex: short s = 30000;
+int: têm tamanho de 32 bits, Ex: int i = 1000;
+long: têm tamanho de 64 bits, Ex: long l = 10000000000L;
+float: têm tamanho de 32 bits e é um decimal simples, Ex: float f = 3.14f;
+double: têm tamanho de 64 bits e é um decimal duplo, Ex: double d = 3,14159;
+char: têm tamaho de 16 bits e é um caractere Unicode, Ex: char c = 'A';
+boolean: têm tamanho de 1 bit e é uma variavel booleana que representa true ou false, Ex: b = true
+String: NÂO É UM TIPO PRIMITIVO, mas vale apena falar sobre, pois facilita a leitura de nomes, textos e frases.
+
+(OBS: o float e o long, respectivamente, precisam do f e do L no final.)
+
+                                    OPERADORES LÓGICOS
+No java existem três operadores lógicos, sendo eles o " E ", o " OU ", e o " NÃO ", eles são representados pelos seguintes simbolos
+
+&&: Representa o operador lógico AND ou " E ";
+||: Representa o operador lógico OR ou " OU ";
+!: Representa o operador lógico NOT ou " NÃO "
+
