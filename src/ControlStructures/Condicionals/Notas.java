@@ -1,4 +1,4 @@
-package ControlStructures;
+package ControlStructures.Condicionals;
 import java.util.Scanner;
 
 public class Notas {
@@ -17,5 +17,6 @@ public class Notas {
         } else {
             System.out.println("Passou!");
         }
+        scanner.close();
     }
 }

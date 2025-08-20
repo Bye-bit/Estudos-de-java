@@ -79,5 +79,94 @@ FOR - Repete um bloco de código um número de vezes;
 WHILE - Repete um bloco de código enquanto sua condição for verdadeira(talvez rode zero vezes);
 DO WHILE - Repete um bloco de código enquanto sua condição for verdadeira(garante pelomenos uma execução);
 
+                                    MÉTODOS
+Na linguagem java " Funções ", são chamadas de métodos, e ele sempre pertence a uma classe. Um método pode ou não retornar um valor
+e pode ou não receber parâmetros
+
+Sintáxe básica de métodos:
+public class exemplo {
+    public void dizerOla() {
+        System.out.println("Olá!");
+    }
+}
+
+Existem vários tipos de métodos:
+
+Tipos Void: não retornam nada.
+
+Tipos com retorno (Int, Double, Boolean): retornam o tipo atribuído ao método.
+
+Tipos static: pertence à classe e não precisa criar objeto para chamar.
+
+Exemplo com static
+
+Public class Exemplo {
+    public static int multiplicador(int x, int y) {
+        return x*y
+    }
+
+    public static void main(String[] args) {
+        int produto = multiplicar(4,6);
+        System.out.println(produto);
+    }
+}
+Dessa forma utilizamos um método static na classe exemplo onde não é preciso criar um objeto para utilizar esse método.
+
+Dentro dos métodos é possível ter parâmetros variáveis com a utilização de varargs " Variable Arguments ", com isso você não precisa
+sobrecarregar ele para cada quantidade de parâmetros possível
+A sintáxe do Varargs é bem simples, por exemplo: int NomeDoParâmetro... | os três pontos indicam que o método pode receber 0 ou
+mais valores daquele tipo, internamente o java transforma isso em um array do tipo especificado.
+
+A sobrecarga de métodos ou Overloading é quando você tem vários métodos com o mesmo nome e diferentes parâmetros para operações
+similares. O ponto bom de fazer métodos sobrecarregados é que o cógido fica mais legível e fácil de entender.
+
+Outro exemplo com varargs
+
+public class Varargs{
+    public static int soma(int... numeros) {
+        int = total 0;
+        for(int i : numeros) {
+            total += i;
+        }
+    }
+    return total;
+}
+
+public static void main(String[] args) {
+    System.out.println(soma(1,3))
+    System.out.println(some(9))
+    // os resultados em ordem desses souts seriam 4,9 respectivamente, pois eles fariam a chamada do método com varargs que 
+    permite entrada de 0 ou mais argumentos.
+}
 
 
+Os métodos também podem chamar a si mesmos, isso é chamado de recursividade. Cuidado com " base case " que é a condição crucial de
+quando os métodos recursivos ou iterativos que define quando a função ou o loop deve parar de se repetir.
+
+                                    SHADOWING(Sombreamento) e THIS
+se uma variável local, ou seja, uma variável declarada dentro de um método tem o mesmo nome do atributo, a váriavel local " shadows"
+ou sombreia o atributo, e temos que usar " this.váriavel " para acessar o atributo do objeto.
+
+class Ex {
+    private int x = 1;
+    void setX(int x) {
+        this.x = x; //this.x é o atributo do objeto; x é o parâmetro do método.
+    }
+}
+
+
+
+
+
+
+                                    ESCOPO DAS VÁRIAVEIS
+O escopo das váriaveis define onde a váriavel é acessível. Em java temos:
+
+(1)Váriaveis locais: Declaradas dentro de métodos, loops ou blocos {}
+que só existem enquanto o método/bloco estiver em execução.
+
+(2)Váriaveis de instância(Atributos): São declaradas na classe, fora dos métodos
+e cada objeto da classe tem sua própria cópia.
+
+(3)Váriaveis de Classe(static): declaradas com static, e são compartilhadas com todos os objetos da classe.
+Ex: static int total = 0;
