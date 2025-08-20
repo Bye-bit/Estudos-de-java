@@ -27,3 +27,57 @@ No java existem três operadores lógicos, sendo eles o " E ", o " OU ", e o " N
 ||: Representa o operador lógico OR ou " OU ";
 !: Representa o operador lógico NOT ou " NÃO "
 
+                                    ESTRUTURAS DE CONTROLE
+
+As estruturas de controle comportam blocos de código que serão executados conforme as condições que são inseridas nele acontecem ou
+deixam de acontecer.
+
+IF -> if() { //Condicional "simples"
+    O if é utilizado para executar blocos diferentes de códigos dependendo de uma condição.
+}
+
+else -> } else {
+    O else é usado em seguida do IF, para forçar a execução de um bloco de código caso a condição do if anterior a ele seja falsa.
+}
+
+else if -> } else if() {
+    O else if é bem semelhante ao else, só que invés de só executar o bloco de código dentro dele, ele possui um if, e o seu bloco
+    de código só será executado se a condição desse if for true.
+}
+
+switch -> switch() {
+    O swtich case é uma condicional multipla, é bastante usado quando se tem várias opções do que pode acontecer.
+    os casos são definidos por case x:, e quando nenhum dos casos acontece o " default " é como se fosse o caso de tratamento de excessões
+    fazendo acontecer algo, mesmo que nenhum dos "cases" tenham sido atendidos.
+    case 1:
+    case 2:
+    case 3:
+    default:
+}
+
+for -> for() {
+    O for é um laço de repetição que executa um bloco de código um número definido de vezes.
+
+}
+
+while -> while () {
+    O while é laco condicional de repetição, que repete o seu bloco de código enquanto a sua condicional for verdadeira ou falsa
+    se usado junto com o operador lógico " ! ".
+
+}
+
+do while -> do {
+        O do while é parecido com o while, sua única diferença é que garante que o bloco de código rodará pelomenos uma vez.
+    }while ()
+
+Em suma:
+IF - Escolhas simples, executa o bloco de código se a condição for verdadeira.;
+ELSE - Executa o bloco de código caso o contrário(se a condição do if for falsa);
+ELSE IF - Encadeia várias condições(quando há mais de duas possibilidades);
+SWITCH CASE - Escolha entre vários valores possíveis (é mais eficiente que muitos "else if");
+FOR - Repete um bloco de código um número de vezes;
+WHILE - Repete um bloco de código enquanto sua condição for verdadeira(talvez rode zero vezes);
+DO WHILE - Repete um bloco de código enquanto sua condição for verdadeira(garante pelomenos uma execução);
+
+
+
